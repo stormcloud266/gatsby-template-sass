@@ -7,9 +7,9 @@ Additional Plugins
 * Web font loader
 * Dotenv
 
-To run
+## To use this template
 
-Clone and Git setup
+### Clone and Git setup
 
 `git clone git@github.com:stormcloud266/my-gatsby-template.git project-name`
 
@@ -21,7 +21,7 @@ Clone and Git setup
 
 `git push origin master -u`
 
-Install and Develop
+### Install and Develop
 
 `npm install`
 
