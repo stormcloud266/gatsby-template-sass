@@ -1,0 +1,112 @@
+$form-color: $color-text-5;
+$form-highlight-color: #7cc6cc;
+
+
+// ********  initial global setup ******** //
+
+input, textarea, button {
+  font-size: $font-1;
+  font-family: $font-body;
+  line-height: 1.6;
+}
+
+input, textarea {
+  padding: $p-0 $p-1;
+  border: 1px solid $form-color;
+  border-radius: 3px;
+  &:focus {
+    border-color: $form-highlight-color;
+  }
+}
+
+textarea { resize: none; }
+
+// ********  solid form inputs ******** //
+
+form.solid {
+  input, textarea {
+    background-color: $form-color;
+    &:focus {
+      border-color: $form-highlight-color;
+    }
+  }
+}
+
+
+// ********  underline form inputs ******** //
+
+form.underline {
+  input, textarea {
+    border: none;
+    border-bottom: 2px solid $form-color;
+    border-radius: 0;
+    padding: 2px 0;
+
+    &:focus {
+      outline: none;
+      border-color: $form-highlight-color;
+    }
+  }
+}
+
+
+// ********  custom checkbox and radio buttons ******** //
+.checkbox, .radio {
+  position: absolute;
+  opacity: 0;
+
+  & + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+  }
+  & + label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: $form-color;
+    border-radius: 2px;
+  }
+  
+  &:focus + label:before { box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12); }
+
+  &:checked + label:before { background: $form-highlight-color; }
+
+  &:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: darken($form-highlight-color, 40%);
+    width: 2px;
+    height: 2px;
+    box-shadow: 
+      2px 0 0 darken($form-highlight-color, 40%),
+      4px 0 0 darken($form-highlight-color, 40%),
+      4px -2px 0 darken($form-highlight-color, 40%),
+      4px -4px 0 darken($form-highlight-color, 40%),
+      4px -6px 0 darken($form-highlight-color, 40%),
+      4px -8px 0 darken($form-highlight-color, 40%);
+    transform: rotate(45deg);
+  }
+}
+.radio {
+  & + label:before {
+    border-radius: 100%;
+  }
+  & + label:before {
+    position: relative;
+    bottom: -3px;
+  }
+  &:checked + label:after {
+    left: 6px;
+    top: 9px;
+    width: 8px;
+    height: 8px;
+    box-shadow: none;
+    border-radius: 100%;
+  }
+}

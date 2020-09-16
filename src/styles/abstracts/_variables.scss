@@ -1,0 +1,52 @@
+// colors
+$color-text-0: #000000;
+$color-text-1: #222222;
+$color-text-2: #444444;
+$color-text-3: #666666;
+$color-text-4: #888888;
+$color-text-5: #BBBBBB;
+$color-text-6: #DDDDDD;
+$color-text-7: #FFFFFF;
+
+$color-bg-0: #FFFFFF;
+$color-bg-1: #F1F1F1;
+$color-bg-dark: #222222;
+
+$color-cta: darkred;
+
+$link-color: #0d83a0;
+$link-highlight-color: lighten($link-color, 20%);
+
+
+// fonts
+$font-header: Arial, sans-serif;
+$font-body: Tahoma, serif;
+
+$font-0: 1.6rem;
+$font-1: 1.8rem;
+$font-2: 2.1rem;
+$font-3: 2.6rem;
+$font-4: 3.1rem;
+$font-5: 3.7rem;
+$font-6: 4.4rem;
+
+
+// spacing
+
+$p-0: .5rem;
+$p-1: .8rem;
+$p-2: 1rem;
+$p-3: 1.2rem;
+$p-4: 1.5rem;
+$p-5: 1.8rem;
+$p-6: 2.1rem;
+$p-7: 2.6rem;
+$p-8: 3.1rem;
+$p-9: 4.4rem;
+$p-10: 5.4rem;
+$p-11: 6.4rem;
+$p-12: 7.7rem;
+$p-13: 9.2rem;
+
+$gap-flex: $p-7;
+$gap-flex-sm: $p-4;

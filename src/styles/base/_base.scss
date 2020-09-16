@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $color-text-1;
+  background-color: $color-bg-0;
+  box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+a { 
+  text-decoration: none;
+  color: $link-color;
+  transition: color .3s;
+  &:hover {
+    color: $link-highlight-color;
+  }
+}

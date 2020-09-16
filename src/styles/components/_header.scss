@@ -1,0 +1,134 @@
+.site-header {
+  // make sure class "wrapper" exists
+  // make sure media queries are set
+
+  // remove to let menu scroll
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+  background-color: steelblue;
+  
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__logo {
+    min-width: 100px;
+    max-width: 140px;
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+
+    li { margin-left: 28px; }
+
+    a {
+      color: white;
+      transition: color .3s;
+      &:hover, &:focus { color: turquoise; }
+    }
+  } // end of &__list
+
+  &__menu-label, &__menu-toggle { display: none; }
+
+  @include whenSmall {
+
+    &__menu-label, &__menu-toggle { display: block; }
+
+    &__menu-toggle {
+      position: absolute;
+      left: -3000px;
+    }
+
+    &__menu-label {
+      cursor: pointer;
+      position: relative;
+      z-index: 10;
+    }
+
+    &__logo {
+      max-width: 70px;
+      position: relative;
+      z-index: 10;
+    }
+
+    &__list {
+      background-color: darkorchid;
+
+      // animation set up
+      visibility: hidden;
+      opacity: 0;
+      transition: all .2s;
+      transition-delay: .5s;
+
+      position: absolute;
+      min-height: 100vh;
+      // fixed menu
+      top:0;right:0;bottom:0;left:0;
+      // scrolling menu
+      // top:0;right:0;left:0;
+
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      li {
+        margin-left: 0;
+        margin-bottom: 36px;
+        font-size: 24px;
+        transition: all .2s;
+        transition-delay: 0s;
+      }
+
+    }
+
+    // menu functionality
+    &__menu-toggle:focus + &__menu-label {
+      color: turquoise;
+    }
+
+    &__menu-toggle:checked ~ &__list {
+      visibility: visible;
+      opacity: 1;
+      transition-delay: 0s;      
+    }
+
+    // menu animations
+    &__menu-toggle ~ &__list > li {
+      transform: translateY(10px);
+      opacity: 0;
+      transition-delay: 0s;
+
+      // staggers li animations
+      &:nth-child(1) { transition-delay: .3s; }
+      &:nth-child(2) { transition-delay: .25s; }
+      &:nth-child(3) { transition-delay: .20s; }
+      &:nth-child(4) { transition-delay: .15s; }
+      &:nth-child(5) { transition-delay: .1s; }
+
+    }
+
+    &__menu-toggle:checked ~ &__list > li {
+      transform: translateY(0);
+      opacity: 1;
+      transition-delay: .2s;
+
+      &:nth-child(1) { transition-delay: .1s; }
+      &:nth-child(2) { transition-delay: .2s; }
+      &:nth-child(3) { transition-delay: .3s; }
+      &:nth-child(4) { transition-delay: .4s; }
+      &:nth-child(5) { transition-delay: .5s; }
+    }
+
+  } // end of whenSmall
+
+}

@@ -1,0 +1,39 @@
+$buttonColor: white;
+$ctaColor: orange;
+
+
+button, .button {
+  padding: $p-0 $p-6;
+  cursor: pointer;
+  color: $color-text-1;
+  background-color: $buttonColor;
+  border-radius: 3px;
+  border: 1px solid $color-text-5;
+  display: inline-block;
+}
+
+.button {
+  &--cta {
+    border-color: $ctaColor;
+    background-color: $ctaColor;
+    transition: border-color .3s, background-color .3s;
+    &:hover {
+      border-color: darken($ctaColor, 10%);
+      background-color: darken($ctaColor, 10%);
+    }
+  }
+
+  &--round {
+    border-radius: 60px;
+  }
+
+  &--white {
+    color: white;
+    background-color: rgba(#fff, 0);
+    border: 1px solid white;
+  }
+
+  &--solid {
+    border: 1px solid white;
+  }
+}

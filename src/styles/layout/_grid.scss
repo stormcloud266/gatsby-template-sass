@@ -1,0 +1,14 @@
+// Grids
+.grid {
+  display: grid;
+  grid-gap: $p-5;
+  grid-auto-rows: 1fr;
+
+  &--2 { grid-template-columns: 1fr 1fr; }
+  &--3 { grid-template-columns: 1fr 1fr 1fr; }
+  &--4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+
+
+  &--collapse-md { @include whenMedium { grid-template-columns: 1fr; } }
+  @include whenSmall { grid-template-columns: 1fr; }
+}

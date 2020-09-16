@@ -1,7 +1,11 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `My Gatsby Start`,
+    description: `Gatsby default plus SCSS, web fonts, Google Analytics`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -15,6 +19,24 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Lato:700,400', 'Open Sans:400']
+        }
+      }
+    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: process.env.TRACKING_ID,
+    //     head: false,
+    //     anonymize: true,
+    //     respectDNT: true,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

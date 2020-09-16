@@ -1,0 +1,16 @@
+// media queries
+
+// 600px
+@mixin whenSmall() {
+  @media only screen and (max-width: 37.5em) {
+      @content;
+  }
+}
+
+
+// 900px
+@mixin whenMedium() {
+  @media only screen and (max-width: 56.25em) {
+      @content;
+  }
+}

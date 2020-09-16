@@ -1,0 +1,43 @@
+$text-color: $color-text-0; 
+$text-color-light: $color-text-1;
+$text-color-lighter: $color-text-2;
+
+$bg-color-1: $color-bg-1;
+
+// TO DO 
+// code
+// pre
+// cite
+// figcaption
+// figure
+// q
+// a img
+
+.blog {
+  & > *:first-child {
+    margin-top: 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 4.4rem;
+    margin-bottom: 2rem;
+  }
+  h5 { color: $text-color-light; }
+  h6 { color: $text-color-lighter; }
+
+  p, img, ul, ol, blockquote { margin-bottom: 2rem; }
+  
+  img { display: block; }
+  
+  ul, ol { margin-left: 2rem; }
+  li:not(:last-child) { margin-bottom: 1rem; }
+
+  ul li { list-style: disc; }
+  ol li { list-style: decimal; }
+
+  blockquote {
+    background: $bg-color-1;
+    padding: $p-5;
+    border-left: 5px solid darken($bg-color-1, 15%);
+  }
+
+}

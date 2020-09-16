@@ -1,0 +1,24 @@
+.section {
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+}
+.section-top { padding-top: 14rem; }
+.section-bottom { padding-bottom: 14rem; }
+
+@include whenMedium {
+  .section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  .section-top { padding-top: 10rem; }
+  .section-bottom { padding-bottom: 10rem; }
+}
+
+@include whenSmall {
+  .section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  .section-top { padding-top: 8rem; }
+  .section-bottom { padding-bottom: 8rem; }
+}
