@@ -10,6 +10,7 @@ Additional Plugins
 To run
 
 Clone and Git setup
+
 `git clone git@github.com:stormcloud266/my-gatsby-template.git project-name`
 
 `cd project-name`
@@ -21,6 +22,7 @@ Clone and Git setup
 `git push origin master -u`
 
 Install and Develop
+
 `npm install`
 
 `gatsby develop`
