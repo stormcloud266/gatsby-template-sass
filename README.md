@@ -3,17 +3,19 @@
 The Gatsby Default Starter with the additions I use on most of my projects.
 
 **Features**
-* SCSS set up
-* create page function
+* SCSS set up (includes my basic framework)
+* Create page function in gatsby-node
 * Responsive nav component
 * Minimal footer component
-* svg icon file
 * SEO component with open graph and Twitter cards
+* Svg icon file
+* Examples page with component and query examples
 
 **Additional Plugins**
 * Gatsby plugin sass
 * Gatsby background image
 * Web font loader
+* Google analytics
 * Dotenv
 
 ## To use this template

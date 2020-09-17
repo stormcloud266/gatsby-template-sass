@@ -4,10 +4,10 @@ import { Link } from "gatsby"
 const NavLinks = ({ specialClass }) => (
   <ul className={specialClass}>
     <li>
-      <Link to="/">Page One</Link>
+      <Link to="/">Home</Link>
     </li>
     <li>
-      <Link to="/">Page</Link>
+      <Link to="/examples">Examples</Link>
     </li>
     <li>
       <Link to="/">Page</Link>

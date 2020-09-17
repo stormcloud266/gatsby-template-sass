@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `My Gatsby Start`,
+    title: `My Gatsby Starter`,
     description: `Gatsby default plus SCSS, web fonts, Google Analytics`,
     author: `@gatsbyjs`,
   },
@@ -24,7 +24,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Lato:700,400', 'Open Sans:400']
+          families: ['Lato:900,400', 'Open Sans:400']
         }
       }
     },
