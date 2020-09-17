@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-
+import NavLinks from './navLinks'
 import { Hamburger, Times, Logo } from '../images/icons'
 
 const Header = () => {
@@ -28,23 +28,7 @@ const Header = () => {
         </button>
   
         <nav className={isOpen ? 'header__nav open' : 'header__nav'}>
-          <ul className="header__nav-list">
-            <li>
-              <Link to="/">Page</Link>
-            </li>
-            <li>
-              <Link to="/">Page</Link>
-            </li>
-            <li>
-              <Link to="/">Page</Link>
-            </li>
-            <li>
-              <Link to="/">Page</Link>
-            </li>
-            <li>
-              <Link to="/">Page</Link>
-            </li>
-          </ul>
+          <NavLinks specialClass='header__nav-list' />
         </nav>
   
       </div>

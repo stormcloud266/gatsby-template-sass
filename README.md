@@ -1,8 +1,16 @@
 # My Gatsby Template
 
-Gatsby default starter with my most used plugins, SCSS set up, and create page function.
+The Gatsby Default Starter with the additions I use on most of my projects.
 
-Additional Plugins
+**Features**
+* SCSS set up
+* create page function
+* Responsive nav component
+* Minimal footer component
+* svg icon file
+* SEO component with open graph and Twitter cards
+
+**Additional Plugins**
 * Gatsby plugin sass
 * Gatsby background image
 * Web font loader

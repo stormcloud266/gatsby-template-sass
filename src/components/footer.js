@@ -1,6 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import NavLinks from './navLinks'
 import { Logo } from '../images/icons'
 
 const Footer = () => (
@@ -13,23 +12,7 @@ const Footer = () => (
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In obcaecati vitae consectetur.</p>
 
         <nav className="footer__nav">
-          <ul className="footer__nav-list">
-            <li>
-              <Link to="/">Page</Link>
-            </li>
-            <li>
-              <Link to="/">Page</Link>
-            </li>
-            <li>
-              <Link to="/">Page</Link>
-            </li>
-            <li>
-              <Link to="/">Page</Link>
-            </li>
-            <li>
-              <Link to="/">Page</Link>
-            </li>
-          </ul>
+          <NavLinks specialClass='footer__nav-list' />
         </nav>
 
       </div>
