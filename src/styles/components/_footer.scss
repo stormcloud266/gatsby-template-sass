@@ -1,0 +1,38 @@
+.footer {
+  padding: 8rem 0;
+  font-size: $font-0;
+
+  svg {
+    max-width: 18rem;
+    margin-bottom: $p-4;
+    fill: #fff;
+  }
+
+  &__text {
+    display: flex;
+    
+    p { max-width: 40rem; }
+  }
+
+  &__nav { flex: 1; }
+
+  &__nav-list {
+    display: flex;
+    justify-content: center;
+
+    li { margin-left: $p-8; }
+  }
+
+  @include whenMedium {
+    &__inner { text-align: center; }
+
+    &__text {
+      flex-direction: column;
+
+      p { margin: 0 auto; }
+    }
+
+    &__nav-list li { margin: $p-4 $p-4 0 $p-4; }
+
+  } // end of whenMedium
+}
