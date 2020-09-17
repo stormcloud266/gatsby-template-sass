@@ -8,6 +8,13 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
+    <div className="section"></div>
+    <div className="section"></div>
+    <div className="section"></div>
+    <div className="section"></div>
+    <div className="section"></div>
+    <div className="section"></div>
+
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
