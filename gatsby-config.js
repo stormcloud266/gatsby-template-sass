@@ -7,6 +7,7 @@ module.exports = {
     title: `My Gatsby Starter`,
     description: `Gatsby default plus SCSS, web fonts, Google Analytics`,
     author: `@gatsbyjs`,
+    siteUrl: 'https://www.test.com' // This is required for gatsby-plugin-robots-txt and gatsby-plugin-sitemap plugins
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -49,15 +50,15 @@ module.exports = {
         environments: ['production']
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: process.env.TRACKING_ID,
-    //     head: false,
-    //     anonymize: true,
-    //     respectDNT: true,
-    //   },
-    // },
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: 'https://www.example.com',
+        sitemap: 'https://www.example.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
