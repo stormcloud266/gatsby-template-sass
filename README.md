@@ -16,8 +16,8 @@ The Gatsby Default Starter with the additions I use on most of my projects.
 * Gatsby plugin sass
 * Gatsby background image
 * Web font loader
-* Google analytics
 * Dotenv
+* gatsby-plugin-gdpr-cookies and react-cookie-consent for GDPR compliant Google Analytics and Facebook Pixel
 
 ## To use this template
 
