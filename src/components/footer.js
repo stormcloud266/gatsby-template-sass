@@ -1,6 +1,6 @@
 import React from "react"
-import NavLinks from './navLinks'
-import { Logo } from '../images/icons'
+import NavLinks from '@components/navLinks'
+import { Logo } from '@images/icons'
 
 const Footer = () => (
   <footer className="bg-dark footer">
