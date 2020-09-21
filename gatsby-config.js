@@ -22,7 +22,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
           families: ['Lato:900,400', 'Open Sans:400']
