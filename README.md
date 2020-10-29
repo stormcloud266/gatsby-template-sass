@@ -28,20 +28,8 @@ The Gatsby Default Starter with the additions I use on most of my projects.
 
 ## To use this template
 
-### Clone and Git setup
+`gatsby new gatsby-sass-project https://github.com/stormcloud266/gatsby-template-sass/`
 
-`git clone git@github.com:stormcloud266/my-gatsby-template.git project-name`
-
-`cd project-name`
-
-`git remote remove origin`
-
-`git remote add origin git@github.com:yourGithub/project-name.git`
-
-`git push origin master -u`
-
-### Install and Develop
-
-`npm install`
+`cd gatsby-sass-project`
 
 `gatsby develop`
